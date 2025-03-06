@@ -22,7 +22,7 @@ jobs:
         env:
           PAT: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
-          ASSIGNEE: melinalou
+          ASSIGNEE: isanti
       - name: git-auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -63,6 +63,7 @@ jobs:
           release_management: false
           include_draft: false
           index_html: false
+          space_to_pages_homepage: https://data.emobon.embrc.eu
       - name: actions-gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
