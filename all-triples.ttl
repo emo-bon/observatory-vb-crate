@@ -2360,7 +2360,7 @@
 <file:///github/workspace/> a schema1:Dataset ;
     dct:conformsTo <https://data.emobon.embrc.eu/observatory-profile/latest> ;
     schema1:contactPoint <https://ror.org/0038zss60> ;
-    schema1:datePublished "2025-04-10T13:31:03+00:00" ;
+    schema1:datePublished "2025-04-10T13:36:21+00:00" ;
     schema1:description "This RO-Crate/GitHub repository contains the EMO BON sampling event logsheets from the observatory VB" ;
     schema1:hasPart <file:///github/workspace/README.md>,
         <file:///github/workspace/data-quality-control/>,
@@ -6419,6 +6419,51 @@
     schema:additionalType core_vocab:fieldSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_67> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-09-20 size fraction 3um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1337"^^xsd:anyURI ;
+            schema:name "Fabien Lombard"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-09-20"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_67> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_210920> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "3"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+02 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 210920 Wa 3µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 3e+00 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_68> a prov:Entity,
         sosa:Sample ;
     dct:description "EMOBON metagenome water sample from station VB collected on 2021-09-20 size fraction 0.2-3um"^^xsd:string ;
@@ -6527,6 +6572,51 @@
             qudt:numericValue 2e-01 ;
             qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
     schema:additionalType core_vocab:fieldSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_70> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-09-20 size fraction 0.2-3um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1340"^^xsd:anyURI ;
+            schema:name "Fabien Lombard"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-09-20"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_70> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_210920> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "0.2-3"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 3e+00 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 210920 Wa 0.2µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e-01 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_71> a prov:Entity,
@@ -6773,6 +6863,51 @@
     schema:additionalType core_vocab:fieldSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_75> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-09-20 size fraction 20um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1345"^^xsd:anyURI ;
+            schema:name "Fabien Lombard"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-09-20"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_75> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_210920> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "20"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+03 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 210920 Wa 20µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+01 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_76> a prov:Entity,
         sosa:Sample ;
     dct:description "EMOBON metagenome water sample from station VB collected on 2021-09-20 size fraction 200um"^^xsd:string ;
@@ -7015,6 +7150,51 @@
             qudt:numericValue 2e+02 ;
             qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
     schema:additionalType core_vocab:fieldSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_80> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-09-20 size fraction 200um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1350"^^xsd:anyURI ;
+            schema:name "Fabien Lombard"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-09-20"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_80> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_210920> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "200"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+03 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 210920 Wa 200µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+02 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_81> a prov:Entity,
@@ -8057,6 +8237,51 @@
     schema:additionalType core_vocab:fieldSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_103> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-10-18 size fraction 20um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1373"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-10-18"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_103> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211018> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "20"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+03 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 211018 Wa 20µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+01 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_104> a prov:Entity,
         sosa:Sample ;
     dct:description "EMOBON metagenome water sample from station VB collected on 2021-10-18 size fraction 200um"^^xsd:string ;
@@ -8299,6 +8524,51 @@
             qudt:numericValue 2e+02 ;
             qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
     schema:additionalType core_vocab:fieldSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_108> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-10-18 size fraction 200um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1378"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-10-18"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_108> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211018> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "200"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+03 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 211018 Wa 200µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+02 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_11> a prov:Entity,
@@ -8633,6 +8903,51 @@
     schema:additionalType core_vocab:fieldSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_139> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-12-17 size fraction 3um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1409"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-12-17"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_139> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211217> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "3"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+02 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 211217 Wa 3µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 3e+00 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_14> a prov:Entity,
         sosa:Sample ;
     dct:description "EMOBON metagenome water sample from station VB collected on 2021-06-21 size fraction 200um"^^xsd:string ;
@@ -8844,6 +9159,51 @@
             qudt:numericValue 2e-01 ;
             qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
     schema:additionalType core_vocab:fieldSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_142> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-12-17 size fraction 0.2-3um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1412"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-12-17"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_142> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211217> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "0.2-3"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 3e+00 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 211217 Wa 0.2µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e-01 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_143> a prov:Entity,
@@ -9088,6 +9448,51 @@
             qudt:numericValue 2e+01 ;
             qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
     schema:additionalType core_vocab:fieldSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_147> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-12-17 size fraction 20um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1417"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-12-17"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_147> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211217> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "20"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+03 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 211217 Wa 20µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+01 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_148> a prov:Entity,
@@ -9393,6 +9798,51 @@
             qudt:numericValue 2e+02 ;
             qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
     schema:additionalType core_vocab:fieldSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_152> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-12-17 size fraction 200um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1422"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Local storage of the collected sample"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2021-12-17"^^xsd:date ;
+            prov:wasAssociatedWith [ a prov:Person,
+                        schema:Person ;
+                    schema:name ""^^xsd:string ] ;
+            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_152> ;
+            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211217> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:filterSizeRange "200"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage true ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+03 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 211217 Wa 200µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+02 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_16> a prov:Entity,
@@ -10917,6 +11367,73 @@
     schema:additionalType core_vocab:fieldSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_95> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-10-18 size fraction 3um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1365"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Storage of sample at sequencing centre for subsequent DNA sequencing"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2022-02-23"^^xsd:date ;
+            prov:wasInformedBy [ a prov:Activity ;
+                    dct:description "Shipping of sample from HMBRC HQ to sequencing centre"^^xsd:string ;
+                    dct:type "transport"^^xsd:string ;
+                    prov:endedAtTime "2022-02-23"^^xsd:date ;
+                    prov:startedAtTime "2022-02-22"^^xsd:date ;
+                    prov:wasInformedBy [ a prov:Activity ;
+                            dct:description "Storage of sample at HMBRC HQ"^^xsd:string ;
+                            dct:type "storage"^^xsd:string ;
+                            prov:startedAtTime "2022-01-25"^^xsd:date ;
+                            prov:wasInformedBy [ a prov:Activity ;
+                                    dct:description "Shipping of sample to HMBRC HQ"^^xsd:string ;
+                                    dct:type "transport"^^xsd:string ;
+                                    prov:endedAtTime "2022-01-25"^^xsd:date ;
+                                    prov:startedAtTime "2022-01-17"^^xsd:date ;
+                                    prov:wasInformedBy [ a prov:Activity ;
+                                            dct:description "Local storage of the collected sample"^^xsd:string ;
+                                            dct:type "storage"^^xsd:string ;
+                                            prov:startedAtTime "2021-10-18"^^xsd:date ;
+                                            prov:wasAssociatedWith [ a prov:Person,
+                                                        schema:Person ;
+                                                    schema:name ""^^xsd:string ] ;
+                                            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_95> ;
+                                            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ] ;
+                            emobon-sampling:storageTemp [ a qudt:QuantityValue ;
+                                    qudt:numericValue -7e+01 ;
+                                    qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ] ] ] ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211018> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:failureComment "blank; non-quantifiable DNA after extraction"^^xsd:string ;
+    emobon-sampling:filterSizeRange "3"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage false ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e+02 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 211018 Wa 3µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 3e+00 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_96> a prov:Entity,
         sosa:Sample ;
     dct:description "EMOBON metagenome water sample from station VB collected on 2021-10-18 size fraction 0.2-3um"^^xsd:string ;
@@ -11067,6 +11584,73 @@
             qudt:numericValue 2e-01 ;
             qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
     schema:additionalType core_vocab:fieldSample,
+        "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_98> a prov:Entity,
+        sosa:Sample ;
+    dct:description "EMOBON metagenome water sample from station VB collected on 2021-10-18 size fraction 0.2-3um"^^xsd:string ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1368"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ],
+        [ a prov:Person,
+                schema:Person ;
+            schema:name ""^^xsd:string ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Storage of sample at sequencing centre for subsequent DNA sequencing"^^xsd:string ;
+            dct:type "storage"^^xsd:string ;
+            prov:startedAtTime "2022-02-23"^^xsd:date ;
+            prov:wasInformedBy [ a prov:Activity ;
+                    dct:description "Shipping of sample from HMBRC HQ to sequencing centre"^^xsd:string ;
+                    dct:type "transport"^^xsd:string ;
+                    prov:endedAtTime "2022-02-23"^^xsd:date ;
+                    prov:startedAtTime "2022-02-22"^^xsd:date ;
+                    prov:wasInformedBy [ a prov:Activity ;
+                            dct:description "Storage of sample at HMBRC HQ"^^xsd:string ;
+                            dct:type "storage"^^xsd:string ;
+                            prov:startedAtTime "2022-01-25"^^xsd:date ;
+                            prov:wasInformedBy [ a prov:Activity ;
+                                    dct:description "Shipping of sample to HMBRC HQ"^^xsd:string ;
+                                    dct:type "transport"^^xsd:string ;
+                                    prov:endedAtTime "2022-01-25"^^xsd:date ;
+                                    prov:startedAtTime "2022-01-17"^^xsd:date ;
+                                    prov:wasInformedBy [ a prov:Activity ;
+                                            dct:description "Local storage of the collected sample"^^xsd:string ;
+                                            dct:type "storage"^^xsd:string ;
+                                            prov:startedAtTime "2021-10-18"^^xsd:date ;
+                                            prov:wasAssociatedWith [ a prov:Person,
+                                                        schema:Person ;
+                                                    schema:name ""^^xsd:string ] ;
+                                            prov:wasInformedBy <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_98> ;
+                                            emobon-sampling:storageLoc "-80°C galeriens 1st shelf left"^^xsd:string ] ] ;
+                            emobon-sampling:storageTemp [ a qudt:QuantityValue ;
+                                    qudt:numericValue -7e+01 ;
+                                    qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/> ] ] ] ] ;
+    sosa:isResultOf <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211018> ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:failure true ;
+    emobon-sampling:failureComment "blank; non-quantifiable DNA after extraction"^^xsd:string ;
+    emobon-sampling:filterSizeRange "0.2-3"^^xsd:string ;
+    emobon-sampling:filtrationTime [ a qudt:QuantityValue ;
+            qudt:numericValue "fi"^^xsd:string ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UHOR/> ] ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:longStorage false ;
+    emobon-sampling:lowerFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 3e+00 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    emobon-sampling:membrCut false ;
+    emobon-sampling:origEmobonId "EMO BON VB 211018 Wa 0.2µm blank"^^xsd:string ;
+    emobon-sampling:sampleReplicate "blank_1"^^xsd:string ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=256318"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "metagenome"^^xsd:string ;
+    emobon-sampling:upperFilterSize [ a qudt:QuantityValue ;
+            qudt:numericValue 2e-01 ;
+            qudt:unit <https://vocab.nerc.ac.uk/collection/P06/current/UXMM/> ] ;
+    schema:additionalType core_vocab:blankSample,
         "http://vocab.nerc.ac.uk/collection/S29/current/PE001525/"^^xsd:anyURI .
 
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sample/EMOBON_VB_Wa_99> a prov:Entity,
@@ -11329,38 +11913,6 @@
     emobon-sampling:taxonomicName "marine plankton metagenome"^^xsd:string ;
     emobon-sampling:tidalStage "no_tide"^^xsd:string .
 
-<http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_210920> a prov:Activity,
-        sosa:Sampling ;
-    dct:type "sampling"^^xsd:string ;
-    prov:startedAtTime "2021-09-20"^^xsd:date ;
-    prov:wasAssociatedWith [ a prov:Person,
-                schema:Person ;
-            schema:identifier "https://orcid.org/0009-0005-6071-1335"^^xsd:anyURI ;
-            schema:name "Fabien Lombard"^^xsd:string ] ;
-    sosa:madeBySampler "Niskin"^^xsd:string ;
-    sosa:resultTime "2021-09-20"^^xsd:date ;
-    sosa:usedProcedure [ a sosa:Procedure ;
-            rdfs:label "WaSOP 1"^^xsd:string ;
-            rdfs:comment "bleach"^^xsd:string ;
-            rdfs:seeAlso "http://dx.doi.org/10.25607/OBP-1653"^^xsd:anyURI ] ;
-    emobon-core:originCountry "France"^^xsd:string ;
-    emobon-core:waterColumnDepth "80"^^xsd:string ;
-    emobon-sampling:bioCommunity ""^^xsd:string ;
-    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
-        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
-        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
-    emobon-sampling:investigationType "metagenome"^^xsd:string ;
-    emobon-sampling:linkedToObservatory <http://data.emobon.embrc.eu/observatory-vb-crate/water/observatory/VB> ;
-    emobon-sampling:maxSamplingDepth [ a qudt:QuantityValue ;
-            qudt:numericValue 1e+00 ;
-            qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ] ;
-    emobon-sampling:minSamplingDepth [ a qudt:QuantityValue ;
-            qudt:numericValue 1e+00 ;
-            qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ] ;
-    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=1874687"^^xsd:anyURI ;
-    emobon-sampling:taxonomicName "marine plankton metagenome"^^xsd:string ;
-    emobon-sampling:tidalStage "no_tide"^^xsd:string .
-
 <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211004> a prov:Activity,
         sosa:Sampling ;
     dct:type "sampling"^^xsd:string ;
@@ -11371,38 +11923,6 @@
             schema:name "Louis Caray--Counil"^^xsd:string ] ;
     sosa:madeBySampler "Niskin"^^xsd:string ;
     sosa:resultTime "2021-10-04"^^xsd:date ;
-    sosa:usedProcedure [ a sosa:Procedure ;
-            rdfs:label "WaSOP 1"^^xsd:string ;
-            rdfs:comment "bleach"^^xsd:string ;
-            rdfs:seeAlso "http://dx.doi.org/10.25607/OBP-1653"^^xsd:anyURI ] ;
-    emobon-core:originCountry "France"^^xsd:string ;
-    emobon-core:waterColumnDepth "80"^^xsd:string ;
-    emobon-sampling:bioCommunity ""^^xsd:string ;
-    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
-        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
-        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
-    emobon-sampling:investigationType "metagenome"^^xsd:string ;
-    emobon-sampling:linkedToObservatory <http://data.emobon.embrc.eu/observatory-vb-crate/water/observatory/VB> ;
-    emobon-sampling:maxSamplingDepth [ a qudt:QuantityValue ;
-            qudt:numericValue 1e+00 ;
-            qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ] ;
-    emobon-sampling:minSamplingDepth [ a qudt:QuantityValue ;
-            qudt:numericValue 1e+00 ;
-            qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ] ;
-    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=1874687"^^xsd:anyURI ;
-    emobon-sampling:taxonomicName "marine plankton metagenome"^^xsd:string ;
-    emobon-sampling:tidalStage "no_tide"^^xsd:string .
-
-<http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211018> a prov:Activity,
-        sosa:Sampling ;
-    dct:type "sampling"^^xsd:string ;
-    prov:startedAtTime "2021-10-18"^^xsd:date ;
-    prov:wasAssociatedWith [ a prov:Person,
-                schema:Person ;
-            schema:identifier "https://orcid.org/0009-0005-6071-1363"^^xsd:anyURI ;
-            schema:name "Louis Caray--Counil"^^xsd:string ] ;
-    sosa:madeBySampler "Niskin"^^xsd:string ;
-    sosa:resultTime "2021-10-18"^^xsd:date ;
     sosa:usedProcedure [ a sosa:Procedure ;
             rdfs:label "WaSOP 1"^^xsd:string ;
             rdfs:comment "bleach"^^xsd:string ;
@@ -11489,16 +12009,16 @@
     emobon-sampling:taxonomicName "marine plankton metagenome"^^xsd:string ;
     emobon-sampling:tidalStage "no_tide"^^xsd:string .
 
-<http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211217> a prov:Activity,
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_210621> a prov:Activity,
         sosa:Sampling ;
     dct:type "sampling"^^xsd:string ;
-    prov:startedAtTime "2021-12-17"^^xsd:date ;
+    prov:startedAtTime "2021-06-21"^^xsd:date ;
     prov:wasAssociatedWith [ a prov:Person,
                 schema:Person ;
-            schema:identifier "https://orcid.org/0009-0005-6071-1407"^^xsd:anyURI ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1271"^^xsd:anyURI ;
             schema:name "Louis Caray--Counil"^^xsd:string ] ;
     sosa:madeBySampler "Niskin"^^xsd:string ;
-    sosa:resultTime "2021-12-17"^^xsd:date ;
+    sosa:resultTime "2021-06-21"^^xsd:date ;
     sosa:usedProcedure [ a sosa:Procedure ;
             rdfs:label "WaSOP 1"^^xsd:string ;
             rdfs:comment "bleach"^^xsd:string ;
@@ -11521,16 +12041,80 @@
     emobon-sampling:taxonomicName "marine plankton metagenome"^^xsd:string ;
     emobon-sampling:tidalStage "no_tide"^^xsd:string .
 
-<http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_210621> a prov:Activity,
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_210920> a prov:Activity,
         sosa:Sampling ;
     dct:type "sampling"^^xsd:string ;
-    prov:startedAtTime "2021-06-21"^^xsd:date ;
+    prov:startedAtTime "2021-09-20"^^xsd:date ;
     prov:wasAssociatedWith [ a prov:Person,
                 schema:Person ;
-            schema:identifier "https://orcid.org/0009-0005-6071-1271"^^xsd:anyURI ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1335"^^xsd:anyURI ;
+            schema:name "Fabien Lombard"^^xsd:string ] ;
+    sosa:madeBySampler "Niskin"^^xsd:string ;
+    sosa:resultTime "2021-09-20"^^xsd:date ;
+    sosa:usedProcedure [ a sosa:Procedure ;
+            rdfs:label "WaSOP 1"^^xsd:string ;
+            rdfs:comment "bleach"^^xsd:string ;
+            rdfs:seeAlso "http://dx.doi.org/10.25607/OBP-1653"^^xsd:anyURI ] ;
+    emobon-core:originCountry "France"^^xsd:string ;
+    emobon-core:waterColumnDepth "80"^^xsd:string ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:linkedToObservatory <http://data.emobon.embrc.eu/observatory-vb-crate/water/observatory/VB> ;
+    emobon-sampling:maxSamplingDepth [ a qudt:QuantityValue ;
+            qudt:numericValue 1e+00 ;
+            qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ] ;
+    emobon-sampling:minSamplingDepth [ a qudt:QuantityValue ;
+            qudt:numericValue 1e+00 ;
+            qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ] ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=1874687"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "marine plankton metagenome"^^xsd:string ;
+    emobon-sampling:tidalStage "no_tide"^^xsd:string .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211018> a prov:Activity,
+        sosa:Sampling ;
+    dct:type "sampling"^^xsd:string ;
+    prov:startedAtTime "2021-10-18"^^xsd:date ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1363"^^xsd:anyURI ;
             schema:name "Louis Caray--Counil"^^xsd:string ] ;
     sosa:madeBySampler "Niskin"^^xsd:string ;
-    sosa:resultTime "2021-06-21"^^xsd:date ;
+    sosa:resultTime "2021-10-18"^^xsd:date ;
+    sosa:usedProcedure [ a sosa:Procedure ;
+            rdfs:label "WaSOP 1"^^xsd:string ;
+            rdfs:comment "bleach"^^xsd:string ;
+            rdfs:seeAlso "http://dx.doi.org/10.25607/OBP-1653"^^xsd:anyURI ] ;
+    emobon-core:originCountry "France"^^xsd:string ;
+    emobon-core:waterColumnDepth "80"^^xsd:string ;
+    emobon-sampling:bioCommunity ""^^xsd:string ;
+    emobon-sampling:environmentMaterial "coastal%20sea%20water%20%5BENVO:00002150%5D"^^xsd:anyURI,
+        "seawater%20%5BENVO:00002149%5D"^^xsd:anyURI,
+        "surface%20water%20%5BENVO:00002042%5D"^^xsd:anyURI ;
+    emobon-sampling:investigationType "metagenome"^^xsd:string ;
+    emobon-sampling:linkedToObservatory <http://data.emobon.embrc.eu/observatory-vb-crate/water/observatory/VB> ;
+    emobon-sampling:maxSamplingDepth [ a qudt:QuantityValue ;
+            qudt:numericValue 1e+00 ;
+            qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ] ;
+    emobon-sampling:minSamplingDepth [ a qudt:QuantityValue ;
+            qudt:numericValue 1e+00 ;
+            qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ] ;
+    emobon-sampling:taxonomicID "https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=1874687"^^xsd:anyURI ;
+    emobon-sampling:taxonomicName "marine plankton metagenome"^^xsd:string ;
+    emobon-sampling:tidalStage "no_tide"^^xsd:string .
+
+<http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_211217> a prov:Activity,
+        sosa:Sampling ;
+    dct:type "sampling"^^xsd:string ;
+    prov:startedAtTime "2021-12-17"^^xsd:date ;
+    prov:wasAssociatedWith [ a prov:Person,
+                schema:Person ;
+            schema:identifier "https://orcid.org/0009-0005-6071-1407"^^xsd:anyURI ;
+            schema:name "Louis Caray--Counil"^^xsd:string ] ;
+    sosa:madeBySampler "Niskin"^^xsd:string ;
+    sosa:resultTime "2021-12-17"^^xsd:date ;
     sosa:usedProcedure [ a sosa:Procedure ;
             rdfs:label "WaSOP 1"^^xsd:string ;
             rdfs:comment "bleach"^^xsd:string ;
