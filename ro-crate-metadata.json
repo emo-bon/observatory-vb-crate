@@ -31,6 +31,9 @@
                     "@id": "data-quality-control/logfile"
                 },
                 {
+                    "@id": "all-triples.ttl"
+                },
+                {
                     "@id": "data-quality-control/report.csv"
                 },
                 {
@@ -124,6 +127,11 @@
             "@id": "https://data.emobon.embrc.eu/observatory-profile/latest",
             "@type": "CreativeWork",
             "name": "<name>"
+        },
+        {
+            "@id": "all-triples.ttl", 
+            "@type": "File",
+            "encodingFormat": "text/turtle"
         },
         {
             "@id": "README.md",
