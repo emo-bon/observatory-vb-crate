@@ -2360,9 +2360,10 @@
 <file:///github/workspace/> a schema1:Dataset ;
     dct:conformsTo <https://data.emobon.embrc.eu/observatory-profile/latest> ;
     schema1:contactPoint <https://ror.org/0038zss60> ;
-    schema1:datePublished "2025-04-10T13:36:21+00:00" ;
+    schema1:datePublished "2025-04-28T12:36:06+00:00" ;
     schema1:description "This RO-Crate/GitHub repository contains the EMO BON sampling event logsheets from the observatory VB" ;
     schema1:hasPart <file:///github/workspace/README.md>,
+        <file:///github/workspace/all-triples.ttl>,
         <file:///github/workspace/data-quality-control/>,
         <file:///github/workspace/data-quality-control/dqc.csv>,
         <file:///github/workspace/data-quality-control/logfile>,
@@ -2399,6 +2400,9 @@
 
 <file:///github/workspace/README.md> a schema1:MediaObject ;
     schema1:encodingFormat "text/markdown" .
+
+<file:///github/workspace/all-triples.ttl> a schema1:MediaObject ;
+    schema1:encodingFormat "text/turtle" .
 
 <file:///github/workspace/data-quality-control/> a schema1:Dataset .
 
