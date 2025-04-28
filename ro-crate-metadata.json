@@ -18,7 +18,7 @@
                 "@type": "ContactPoint",
                 "email": "emobon@embrc.eu"
             },
-            "datePublished": "2025-04-10T13:36:21+00:00",
+            "datePublished": "2025-04-28T12:36:06+00:00",
             "description": "This RO-Crate/GitHub repository contains the EMO BON sampling event logsheets from the observatory VB",
             "hasPart": [
                 {
@@ -141,11 +141,6 @@
             "encodingFormat": "text/csv"
         },
         {
-            "@id": "all-triples.ttl", 
-            "@type": "File",
-            "encodingFormat": "text/turtle"
-        },
-        {
             "@id": "data-quality-control/logfile",
             "@label": "./data-quality-control/logfile",
             "@type": "File",
@@ -156,6 +151,12 @@
             "@label": "./data-quality-control/report.csv",
             "@type": "File",
             "encodingFormat": "text/csv"
+        },
+        {
+            "@id": "all-triples.ttl",
+            "@label": "./all-triples.ttl",
+            "@type": "File",
+            "encodingFormat": "text/turtle"
         },
         {
             "@id": "data-quality-control/",
