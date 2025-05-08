@@ -1,0 +1,59 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> . 
+@prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix ssn: <http://www.w3.org/ns/ssn/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mr: <http://marineregions.org/ns/ontology#> .
+@prefix emobon-sequence: <https://data.emobon.embrc.eu/ns/sequence#> .
+@prefix emobon-core: <https://data.emobon.embrc.eu/ns/core#> .
+@prefix emobon-sampling: <https://data.emobon.embrc.eu/ns/sampling#> .
+@prefix core_vocab: <https://data.emobon.embrc.eu/ns/core_vocab#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#>.
+@base <http://data.emobon.embrc.eu/observatory-vb-crate/water/sampling-event/VB_Wa_220221> . <>
+    a sosa:Sampling, prov:Activity ;  
+    
+    dct:type "sampling"^^xsd:string ;
+    prov:startedAtTime '2022-02-21'^^xsd:date ; 
+    prov:wasAssociatedWith [
+        a prov:Person, schema:Person ;
+        schema:name 'Louis Caray--Counil'^^xsd:string ;
+        schema:identifier 'https://orcid.org/0009-0005-6071-1459'^^xsd:anyURI ;
+    ] ;
+    
+    sosa:resultTime '2022-02-21'^^xsd:date ;     
+    sosa:madeBySampler 'Niskin'^^xsd:string ;
+    sosa:usedProcedure [
+        a sosa:Procedure ;
+        rdfs:label 'WaSOP 1'^^xsd:string ;
+        rdfs:comment 'bleach'^^xsd:string ;
+        rdfs:seeAlso "http://dx.doi.org/10.25607/OBP-1653"^^xsd:anyURI ;
+        ] ;
+    emobon-sampling:tidalStage 'no_tide'^^xsd:string ; 
+    emobon-sampling:minSamplingDepth [
+        a qudt:QuantityValue ;
+        qudt:numericValue '1.0'^^xsd:double ;
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ; 
+        ] ; 
+    emobon-sampling:maxSamplingDepth [
+        a qudt:QuantityValue ;
+        qudt:numericValue '1.0'^^xsd:double ;
+        qudt:unit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/> ; 
+        ] ;
+    
+    emobon-core:waterColumnDepth '80'^^xsd:string ; 
+    emobon-core:originCountry 'France'^^xsd:string ;
+    
+    emobon-sampling:environmentMaterial 'seawater%20%5BENVO:00002149%5D'^^xsd:anyURI, 'coastal%20sea%20water%20%5BENVO:00002150%5D'^^xsd:anyURI, 'surface%20water%20%5BENVO:00002042%5D'^^xsd:anyURI;
+    emobon-sampling:investigationType 'metagenome'^^xsd:string ;
+    emobon-sampling:taxonomicID 'https://www.ncbi.nlm.nih.gov/taxonomy/browser/wwwtax.cgi?id=1874687'^^xsd:anyURI ;
+    emobon-sampling:taxonomicName 'marine plankton metagenome'^^xsd:string ;
+    emobon-sampling:bioCommunity ''^^xsd:string ;
+    
+    emobon-sampling:linkedToObservatory </observatory-vb-crate/water/observatory/VB>  ; 
+.
