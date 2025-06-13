@@ -1,11 +1,11 @@
 @prefix core_vocab: <https://data.emobon.embrc.eu/ns/core_vocab#> .
 @prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix emobon-core: <https://data.emobon.embrc.eu/ns/core#> .
 @prefix emobon-sampling: <https://data.emobon.embrc.eu/ns/sampling#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix mr: <http://marineregions.org/ns/ontology#> .
-@prefix ns1: <https://www.w3.org/ns/dcat#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -5909,7 +5909,7 @@
 <file:///github/workspace/> a schema1:Dataset ;
     dct:conformsTo <https://data.emobon.embrc.eu/observatory-profile/latest> ;
     schema1:contactPoint <https://ror.org/0038zss60> ;
-    schema1:datePublished "2025-05-08T13:53:49+00:00" ;
+    schema1:datePublished "2025-06-13T08:41:55+00:00" ;
     schema1:description "This RO-Crate/GitHub repository contains the EMO BON sampling event logsheets from the observatory VB" ;
     schema1:hasPart <file:///github/workspace/README.md>,
         <file:///github/workspace/all-triples.ttl>,
@@ -5945,7 +5945,7 @@
     schema1:license "https://creativecommons.org/licenses/by/4.0/" ;
     schema1:publisher "https://www.embrc.eu/emo-bon" ;
     schema1:title "observatory-vb-crate" ;
-    ns1:accessURL "https://raw.githubusercontent.com/emo-bon/observatory-vb-crate/main/ro-crate-metadata.json" .
+    dcat:accessURL "https://raw.githubusercontent.com/emo-bon/observatory-vb-crate/main/ro-crate-metadata.json" .
 
 <file:///github/workspace/README.md> a schema1:MediaObject ;
     schema1:encodingFormat "text/markdown" .
