@@ -448,6 +448,6 @@ ERROR:pipeline.rules:orcid api failure for 0009-0005-6071-1718
 ERROR:pipeline.rules:orcid api failure for 0009-0005-6071-1719
 ERROR:pipeline.rules:orcid api failure for 0009-0005-6071-1720
 ERROR:py_data_rules.rule_engine:rule evaluation failed for store_person_orcid with exception KeyError: 'store_person_orcid'
-WARNING:py_data_rules.rule_factory:excess columns in table wo: {'data_owner_edmoid', 'data_contact_email', 'data_owner'}
+WARNING:py_data_rules.rule_factory:excess columns in table wo: {'data_contact_email', 'data_owner', 'data_owner_edmoid'}
 WARNING:py_data_rules.rule_factory:missing columns in table ws: {'store_person_orcid'}
 WARNING:py_data_rules.rule_factory:excess columns in table ws: {'sampl_person_orcid.1'}
