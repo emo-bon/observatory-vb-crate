@@ -12,7 +12,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: download
-        uses: emo-bon/logsheet-downloader-action@master
+        uses: emo-bon/populate-action@dev
       - name: git-auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
