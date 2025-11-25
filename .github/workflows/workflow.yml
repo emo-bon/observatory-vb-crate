@@ -1,3 +1,8 @@
+name: observatory-crate-workflow
+true:
+  schedule:
+  - cron: 0 0 1 */6 *
+  workflow_dispatch: null
 jobs:
   job:
     env:
@@ -6,8 +11,7 @@ jobs:
       GITHUB_REPOSITORY: ${{ github.repository }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       HARD_LOGSHEET_URL: .nan
-      RDF_AGGREGATOR_GLOB: 'sediment/**/*: ttl, water/**/*: ttl, ro-crate-metadata.json:
-        json-ld'
+      RDF_AGGREGATOR_GLOB: sediment/**/*:ttl,water/**/*:ttl,ro-crate-metadata.json:json-ld
       ROCRATE_PROFILE_URI: https://data.emobon.embrc.eu/observatory-profile/latest
       SEDIMENT_LOGSHEET_URL: .nan
       WATER_LOGSHEET_URL: https://docs.google.com/spreadsheets/d/1kSlTcNfXaCQv7fIKVbBnt5PmRW3_H7Trryh4FJHyLkE/edit?usp=sharing
@@ -36,18 +40,13 @@ jobs:
     - name: rocrate-to-pages
       uses: vliz-be-opsci/rocrate-to-pages@latest
       with:
-        include_draft: 'false'
-        index_html: 'false'
-        multiple_rocrates: 'true'
-        release_management: 'false'
+        include_draft: false
+        index_html: false
+        multiple_rocrates: true
+        release_management: false
         space_to_pages_homepage: https://data.emobon.embrc.eu
     - name: actions-gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./unicornpages
-name: observatory-crate-workflow
-'on':
-  schedule:
-  - cron: 0 0 1 */6 *
-  workflow_dispatch: ''
