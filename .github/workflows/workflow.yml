@@ -1,80 +1,53 @@
-name: linked-data-etl
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 1 */6 *'
 jobs:
   job:
-    runs-on: ubuntu-latest
     env:
+      DATA_QUALITY_CONTROL_ASSIGNEE: isanti
+      DATA_QUALITY_CONTROL_THRESHOLD_DATE: 31/12/2022
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      HARD_LOGSHEET_URL: .nan
+      RDF_AGGREGATOR_GLOB: 'sediment/**/*: ttl, water/**/*: ttl, ro-crate-metadata.json:
+        json-ld'
       ROCRATE_PROFILE_URI: https://data.emobon.embrc.eu/observatory-profile/latest
+      SEDIMENT_LOGSHEET_URL: .nan
+      WATER_LOGSHEET_URL: https://docs.google.com/spreadsheets/d/1kSlTcNfXaCQv7fIKVbBnt5PmRW3_H7Trryh4FJHyLkE/edit?usp=sharing
+    runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: download
-        uses: emo-bon/populate-action@dev
-      - name: git-auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: update on behalf of logsheet-downloader-action
-      - name: data-quality-control-action
-        uses: emo-bon/data-quality-control-action@main
-        env:
-          PAT: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-          ASSIGNEE: isanti
-      - name: git-auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: update on behalf of data-quality-control-action
-      - name: rocrate-sembench-setup
-        uses: vliz-be-opsci/rocrate-sembench-setup@main
-        env:
-          PROFILE: ${{ env.ROCRATE_PROFILE_URI }}
-      - name: semantify
-        uses: vliz-be-opsci/semantify@main
-      - name: rocrate-sembench-cleanup
-        run: sudo rm -rf ~sembench_data_cache/ ~sembench_kwargs.json
-      - name: git-auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: update on behalf of semantify
-      - name: rocrate-metadata-generator-action
-        uses: emo-bon/rocrate-metadata-generator-action@main
-        env:
-          PROFILE: ${{ env.ROCRATE_PROFILE_URI }}
-          REPO: ${{ github.repository }}
-      - name: git-auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: update on behalf of rocrate-metadata-generator-action
-      - name: rdf-aggregate-action
-        uses: vliz-be-opsci/rdf-aggregate-action@main
-        env:
-          GLOBS: sediment/**/*:ttl|water/**/*:ttl|ro-crate-metadata.json:json-ld
-      - name: git-auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: update on behalf of rdf-aggregate-action
-      - name: rocrate-metadata-generator-action
-        uses: emo-bon/rocrate-metadata-generator-action@main
-        env:
-          PROFILE: ${{ env.ROCRATE_PROFILE_URI }}
-          REPO: ${{ github.repository }}
-      - name: git-auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: update on behalf of rocrate-metadata-generator-action
-      - name: rocrate-to-pages
-        uses: vliz-be-opsci/rocrate-to-pages@latest
-        with:
-          multiple_rocrates: true
-          release_management: false
-          include_draft: false
-          index_html: false
-          space_to_pages_homepage: https://data.emobon.embrc.eu
-      - name: actions-gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./unicornpages
+    - name: checkout
+      uses: actions/checkout@v5
+    - name: populate-action
+      uses: emo-bon/populate-action@main
+    - name: git-auto-commit-action
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: update on behalf of populate-action
+    - name: data-quality-control-action
+      uses: emo-bon/data-quality-control-action@main
+    - name: git-auto-commit-action
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: update on behalf of data-quality-control-action
+    - name: semantic-uplifting-action
+      uses: emo-bon/semantic-uplifting-action@main
+    - name: git-auto-commit-action
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: update on behalf of semantic-uplifting-action
+    - name: rocrate-to-pages
+      uses: vliz-be-opsci/rocrate-to-pages@latest
+      with:
+        include_draft: 'false'
+        index_html: 'false'
+        multiple_rocrates: 'true'
+        release_management: 'false'
+        space_to_pages_homepage: https://data.emobon.embrc.eu
+    - name: actions-gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./unicornpages
+name: observatory-crate-workflow
+'on':
+  schedule:
+  - cron: 0 0 1 */6 *
+  workflow_dispatch: ''
