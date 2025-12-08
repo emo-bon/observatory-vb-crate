@@ -2,7 +2,7 @@ jobs:
   job:
     env:
       DATA_QUALITY_CONTROL_ASSIGNEE: isanti
-      DATA_QUALITY_CONTROL_THRESHOLD_DATE: 31/12/2022
+      DATA_QUALITY_CONTROL_THRESHOLD_DATE: '2022-12-31'
       GITHUB_REPOSITORY: ${{ github.repository }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       HARD_LOGSHEET_URL: .nan
