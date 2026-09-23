@@ -32,6 +32,15 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: update on behalf of semantic-uplifting-action
+    - name: subsetted-distribution-creation-action
+      uses: emo-bon/subsetted-distribution-creation-action@main
+      with:
+        distribution_affix: bluecloud-ENA
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: git-auto-commit-action
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: update all-triples.ttl with subsetted distribution
     - name: rocrate-to-pages
       uses: vliz-be-opsci/rocrate-to-pages@latest
       with:
